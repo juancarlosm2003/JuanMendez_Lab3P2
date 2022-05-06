@@ -20,13 +20,15 @@ public class JuanMendez_Lab3P2 {
      */
     public static void main(String[] args) {
         ArrayList cliente = new ArrayList();
+        ArrayList residencia = new ArrayList();
         int opcion = 1;
         while (opcion != 5) {
             opcion = Integer.parseInt(
                     JOptionPane.showInputDialog("Sistema de bienes raices \n"
                             + "1.- Administracion de clientes \n"
+                            + "2.- Administrador de bienes inmuebles \n"
                             + "2.- administracion de la residencia \n"
-                            + "2.- Salir")
+                            + "3.- Salir")
             );
 
             if (opcion == 1) {
@@ -62,9 +64,12 @@ public class JuanMendez_Lab3P2 {
                         }
                     }
                 }
-            }else{
-                if (opcion == 2){
-                    
+            } else {
+                if (opcion == 2) {
+                    String direc = JOptionPane.showInputDialog("Ingrese la direccion del inmueble");
+                    String dimension = JOptionPane.showInputDialog("Ingrese la direccion del inmueble: ");
+                    String id = JOptionPane.showInputDialog("Ingrese el ID del inmueble");
+                    residencia.add(new bienes_inmuebles(direc,dimension,id));
                 }
             }
         }
