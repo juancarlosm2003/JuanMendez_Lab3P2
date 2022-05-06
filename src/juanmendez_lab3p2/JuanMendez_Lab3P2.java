@@ -25,7 +25,7 @@ public class JuanMendez_Lab3P2 {
             opcion = Integer.parseInt(
                     JOptionPane.showInputDialog("Sistema de bienes raices \n"
                             + "1.- Administracion de clientes \n"
-                            + "2.- administracion de los locales \n"
+                            + "2.- administracion de la residencia \n"
                             + "2.- Salir")
             );
 
@@ -62,7 +62,10 @@ public class JuanMendez_Lab3P2 {
                         }
                     }
                 }
-
+            }else{
+                if (opcion == 2){
+                    
+                }
             }
         }
     }
