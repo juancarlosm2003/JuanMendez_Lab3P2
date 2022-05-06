@@ -10,6 +10,17 @@ package juanmendez_lab3p2;
  * @author Juan Carlos Mendez
  */
 public class apartamento extends edificio {
-    
+
+    int numerolocal;
+    String referencia;
+
+    public apartamento() {
+        super();
+    }
+
+    public apartamento(int numerolocal, String referencia) {
+        this.numerolocal = numerolocal;
+        this.referencia = referencia;
+    }
 
 }
