@@ -10,5 +10,8 @@ package juanmendez_lab3p2;
  * @author Juan Carlos Mendez
  */
 public class edificio {
-
+    public int numero;
+    public edificio(int numerolocal, String referencia, int numero){
+        
+    }
 }

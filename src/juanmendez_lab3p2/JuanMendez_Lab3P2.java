@@ -19,15 +19,16 @@ public class JuanMendez_Lab3P2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        bienes_inmuebles b = new bienes_inmuebles(); 
+        bienes_inmuebles b = new bienes_inmuebles();
         ArrayList cliente = new ArrayList();
         ArrayList residencia = new ArrayList();
         int opcion = 1;
-        while (opcion != 5) {
+        while (opcion != 3) {
             opcion = Integer.parseInt(
                     JOptionPane.showInputDialog("Sistema de bienes raices \n"
                             + "1.- Administracion de clientes \n"
-                            + "2.- Administrador de bienes inmuebles \n")
+                            + "2.- Administrador de bienes inmuebles \n"
+                            + "3.- Salir")
             );
 
             if (opcion == 1) {
@@ -71,7 +72,18 @@ public class JuanMendez_Lab3P2 {
                     b.setDimensiones(dimension);
                     String id = JOptionPane.showInputDialog("Ingrese el ID del inmueble");
                     b.setId(id);
-                    residencia.add(new bienes_inmuebles(direc,dimension, id));
+                    residencia.add(new bienes_inmuebles(direc, dimension, id));
+                    int o = 1;
+                    while (o != 7) {
+                        int op = Integer.parseInt(JOptionPane.showInputDialog("Sistema de administracion de bienes inmuebles \n"
+                                + "1.- Crear casa \n"
+                                + "2.- eliminar casa  \n"
+                                + "3.- crear edificio \n"
+                                + "4.- eliminar edificio \n")
+                                + "5.- Crear departamento \n"
+                                + "6.- Eliminar departamento \n"
+                        );
+                    }
                 }
             }
         }
