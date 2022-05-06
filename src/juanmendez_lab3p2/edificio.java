@@ -10,5 +10,5 @@ package juanmendez_lab3p2;
  * @author Juan Carlos Mendez
  */
 public class edificio {
-    
+
 }

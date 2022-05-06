@@ -19,6 +19,7 @@ public class JuanMendez_Lab3P2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        bienes_inmuebles b = new bienes_inmuebles(); 
         ArrayList cliente = new ArrayList();
         ArrayList residencia = new ArrayList();
         int opcion = 1;
@@ -26,9 +27,7 @@ public class JuanMendez_Lab3P2 {
             opcion = Integer.parseInt(
                     JOptionPane.showInputDialog("Sistema de bienes raices \n"
                             + "1.- Administracion de clientes \n"
-                            + "2.- Administrador de bienes inmuebles \n"
-                            + "2.- administracion de la residencia \n"
-                            + "3.- Salir")
+                            + "2.- Administrador de bienes inmuebles \n")
             );
 
             if (opcion == 1) {
@@ -67,9 +66,12 @@ public class JuanMendez_Lab3P2 {
             } else {
                 if (opcion == 2) {
                     String direc = JOptionPane.showInputDialog("Ingrese la direccion del inmueble");
+                    b.setDireccion(direc);
                     String dimension = JOptionPane.showInputDialog("Ingrese la direccion del inmueble: ");
+                    b.setDimensiones(dimension);
                     String id = JOptionPane.showInputDialog("Ingrese el ID del inmueble");
-                    residencia.add(new bienes_inmuebles(direc,dimension,id));
+                    b.setId(id);
+                    residencia.add(new bienes_inmuebles(direc,dimension, id));
                 }
             }
         }
